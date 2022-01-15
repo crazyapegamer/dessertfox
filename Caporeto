@@ -1,0 +1,94 @@
+
+
+
+mappenstructuur
+
+
+New-Item -Path 'P:\Documenten\Test' -ItemType Directory
+
+New-Item -Path 'P:\Documenten\Notulen' -ItemType Directory
+
+New-Item -Path 'P:Documenten\' -ItemType Directory
+
+
+New-Item -Path 'P:\Documenten\Bijlagen' -ItemType Directory
+
+New-Item -Path 'P:\Documenten\Spreadsheets\kosten' -ItemType Directory
+
+
+
+
+create file in map
+
+New-Item -Path 'P:\Documenten\Notulen\ReadMe.txt' -ItemType File
+
+
+Kopieeren van de ene folder naar andere folder
+
+Copy-Item 'P:\Documenten\Test' 'P:\backupmap'
+
+testen van een folder
+
+Test-Path D:\temp\test
+
+
+volume check en free space
+
+Get-psdrive C
+Get-volume
+
+
+alle txt bestanden vinden op disk
+
+Get-ChildItem -Path P:\ *.txt -ren d
+
+cpu usage
+
+Get-Process 'Notepad'
+
+eventlog 5 informatie
+
+echo Application,Security,System | % { get-winevent $_ -maxevents 5 } | 
+  ft -groupby logname
+
+
+
+
+LINUX
+
+
+chage -E 2023-05-01 HamdouiF
+
+df -F
+
+yum remove epel-release
+
+yum remove htop
+
+rm -r /home/SteendersJ
+
+sudo usermod -d /home/notulen SteendeersJ
+
+chage -d 2022-01-01 HamdouiF
+
+rm -rf folders
+
+usermod -ag projarch JansenA
+usermod -ag projarch HamdouiF
+usermod -ag projarch SteendersJ
+cat /etc/group | grep projarch
+
+S
+
+>Cat /proc/cpuinfo
+
+>cat /etc/resolv.conf
+
+>chage -l HamdouiF
+
+chmod _R 740 documenten
+ls -l
+
+
+
+
