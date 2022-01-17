@@ -20,7 +20,7 @@ New-Item -Path 'P:\Documenten\Spreadsheets\kosten' -ItemType Directory
 
 create file in map
 
-New-Item -Path 'P:\Documenten\Notulen\ReadMe.txt' -ItemType File
+New-Item -Path 'P:\Documenten\Notulen\ReadMe.txt' -ItemType File -ItemType File -value 'uitsluiting voor bedoeling'
 
 
 Kopieeren van de ene folder naar andere folder
